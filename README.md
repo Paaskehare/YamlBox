@@ -5,6 +5,8 @@
   
 It is written for python3, although fallback support for python2 is planned.
 
+Example Yaml Config structure is included.
+
 **Planned Features**:  
 - Python2 Support  
 - XML Config to Yaml Config parsing, for converting your existing menu.xml file  

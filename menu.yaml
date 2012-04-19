@@ -1,0 +1,53 @@
+menus:
+  - id    : application-menu
+    label : Applications
+    items :
+
+      - type    : item
+        label   : Sublime Text
+        execute : subl
+
+      - type    : separator
+        label   : yoyo
+
+  - id    : ssh-menu
+    label : SSH
+    items : 
+
+      - type    : item
+        label   : user@server.tld
+        execute : xterm -e "ssh user@server.tld"
+
+      - type    : menu
+        label   : Submenu
+        items   :
+
+          - type    : item
+            label   : Some Item
+            execute : Execute all the shit!
+
+  - id    : games-menu
+    label : games
+    items : 
+
+
+root:
+  - type    : item
+    label   : Terminal
+    execute : xterm
+
+  - type    : separator
+
+  - type    : menu
+    id      : application-menu
+
+  - type    : menu
+    id      : games-menu
+
+  - type    : menu
+    id      : ssh-menu
+
+  - type    : item
+    label   : Exit
+    execute : Exit
+    prompt  : true
